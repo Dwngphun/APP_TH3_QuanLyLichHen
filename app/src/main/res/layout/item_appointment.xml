@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_card"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tên lịch hẹn (chữ đậm, cỡ lớn) -->
+    <TextView
+        android:id="@+id/tvItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/text_primary"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:text="Họp nhóm đồ án" />
+
+    <!-- Dòng Địa điểm: [tên địa điểm] (màu xám) -->
+    <TextView
+        android:id="@+id/tvItemLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"
+        tools:text="Địa điểm: Phòng B203" />
+
+    <!-- Hàng ngang gồm 2 badge bo tròn -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Badge ngày giờ bên trái: dd/MM/yyyy · HH:mm -->
+        <TextView
+            android:id="@+id/tvItemDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_badge_time"
+            android:textColor="@color/badge_time_text"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="25/10/2026 · 09:00" />
+
+        <!-- Khoảng trống đẩy badge thứ hai sang phải -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <!-- Badge trạng thái nhắc nhở bên phải -->
+        <TextView
+            android:id="@+id/tvItemReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_badge_reminder_on"
+            android:textColor="@color/badge_reminder_on_text"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="Có nhắc" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Bảng màu chủ đạo -->
+    <color name="teal_primary">#00796B</color>
+    <color name="teal_dark">#004D40</color>
+    <color name="teal_light">#E0F2F1</color>
+
+    <!-- Nền màn hình và Thẻ Card -->
+    <color name="bg_screen">#F5F7F8</color>
+    <color name="card_white">#FFFFFF</color>
+    <color name="card_border">#E0E0E0</color>
+
+    <!-- Ô nhập liệu -->
+    <color name="input_bg">#FFFFFF</color>
+    <color name="input_border">#CFD8DC</color>
+    <color name="input_border_focused">#00796B</color>
+
+    <!-- Badge thời gian -->
+    <color name="badge_time_bg">#E0F2F1</color>
+    <color name="badge_time_text">#00796B</color>
+
+    <!-- Badge nhắc nhở -->
+    <color name="badge_reminder_on_bg">#FFF3E0</color>
+    <color name="badge_reminder_on_text">#E65100</color>
+    <color name="badge_reminder_off_bg">#EEEEEE</color>
+    <color name="badge_reminder_off_text">#757575</color>
+
+    <!-- Nút xóa và thông báo lỗi -->
+    <color name="btn_delete">#C62828</color>
+    <color name="btn_delete_pressed">#8E0000</color>
+    <color name="error_red">#C62828</color>
+
+    <!-- Màu cơ bản -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#9E9E9E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
